@@ -7,7 +7,11 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = {
+        "http://localhost:5173",
+        "http://172.30.1.100:5173",  // 백엔드 실행 PC
+        "http://172.30.1.101:5173"   // 다른 기기에서 프론트 접근할 수 있으므로 추가
+})
 @RestController
 @RequestMapping("/api/todos")
 @RequiredArgsConstructor
