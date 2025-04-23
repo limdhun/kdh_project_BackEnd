@@ -47,7 +47,7 @@ POST /api/auth/login
 {
   "token": "Bearer eyJhbGciOi..."
 }
-
+```
 ⚠️ 개발 참고사항
 DB: bootdb (user: bootdbuser, pw: bootdbuser)
 application.yml로 설정 관리
